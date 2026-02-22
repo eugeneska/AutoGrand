@@ -1,0 +1,13 @@
+{
+  "name": "autogrand",
+  "version": "1.0.0",
+  "description": "AutoGrand — пригон авто из США под ключ",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  }
+}
