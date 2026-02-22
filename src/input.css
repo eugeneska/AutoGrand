@@ -113,6 +113,24 @@
     box-shadow: 0 8px 24px rgba(17, 109, 255, 0.2);
   }
 
+  .btn-outline-white {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    text-transform: none;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 18px;
+    padding: 1.1rem 2.75rem;
+  }
+
+  .btn-outline-white:hover {
+    background-color: #fff;
+    color: var(--color-primary);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
+  }
+
   .stat-card {
     background: var(--color-bg);
     border: 1px solid var(--color-border);
