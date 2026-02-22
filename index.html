@@ -177,6 +177,81 @@
     </div>
   </section>
 
+  <!-- ════════════════════ АКТУАЛЬНЫЕ ЛОТЫ ════════════════════ -->
+  <section id="lots" class="py-24">
+    <div class="max-w-[1400px] mx-auto px-8">
+
+      <!-- Header: title + arrows -->
+      <div class="flex items-center justify-between mb-12">
+        <h2 class="text-[40px] font-extrabold uppercase text-text">Актуальные лоты</h2>
+        <div class="flex items-center gap-3">
+          <button id="lots-prev" class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:bg-primary-hover transition-colors cursor-pointer">
+            <svg class="w-6 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 20"><path d="M24 10H4m0 0l6-6M4 10l6 6"/></svg>
+          </button>
+          <button id="lots-next" class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:bg-primary-hover transition-colors cursor-pointer">
+            <svg class="w-6 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 20"><path d="M0 10h20m0 0l-6-6m6 6l-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Card 1: Toyota Camry -->
+        <div class="border border-text/15 rounded-[28px] overflow-hidden transition hover:shadow-lg">
+          <div class="p-5">
+            <img src="./camry.jpg" alt="Toyota Camry" class="w-full h-[240px] object-cover rounded-xl">
+          </div>
+          <div class="px-6 pb-7">
+            <h3 class="text-[22px] font-bold text-text mb-4">Nissan Leaf</h3>
+            <div class="flex flex-col gap-2 text-[17px] mb-6">
+              <p class="flex justify-between"><span class="text-text-secondary">Кузов:</span> <span class="text-text-secondary font-semibold">Седан</span></p>
+              <p class="flex justify-between"><span class="text-text-secondary">Двигатель:</span> <span class="text-text-secondary font-semibold">3.0L</span></p>
+              <p class="flex justify-between"><span class="text-text-secondary">Год выпуска:</span> <span class="text-text-secondary font-semibold">2021</span></p>
+            </div>
+            <p class="text-[22px] font-bold text-text mb-6">от 2 100 000 ₽</p>
+            <a href="#" class="btn btn-primary w-full text-[15px]">Подробнее</a>
+          </div>
+        </div>
+
+        <!-- Card 2: Nissan Leaf -->
+        <div class="border border-text/15 rounded-[28px] overflow-hidden transition hover:shadow-lg">
+          <div class="p-5">
+            <img src="./nissan.jpg" alt="Nissan Leaf" class="w-full h-[240px] object-cover rounded-xl">
+          </div>
+          <div class="px-6 pb-7">
+            <h3 class="text-[22px] font-bold text-text mb-4">Nissan Leaf</h3>
+            <div class="flex flex-col gap-2 text-[17px] mb-6">
+              <p class="flex justify-between"><span class="text-text-secondary">Кузов:</span> <span class="text-text-secondary font-semibold">Хэтчбек</span></p>
+              <p class="flex justify-between"><span class="text-text-secondary">Двигатель:</span> <span class="text-text-secondary font-semibold">Электро</span></p>
+              <p class="flex justify-between"><span class="text-text-secondary">Год выпуска:</span> <span class="text-text-secondary font-semibold">2022</span></p>
+            </div>
+            <p class="text-[22px] font-bold text-text mb-6">от 1 750 000 ₽</p>
+            <a href="#" class="btn btn-primary w-full text-[15px]">Подробнее</a>
+          </div>
+        </div>
+
+        <!-- Card 3: BMW 5 Series -->
+        <div class="border border-text/15 rounded-[28px] overflow-hidden transition hover:shadow-lg">
+          <div class="p-5">
+            <img src="./bmw.png" alt="BMW 5 Series" class="w-full h-[240px] object-cover rounded-xl">
+          </div>
+          <div class="px-6 pb-7">
+            <h3 class="text-[22px] font-bold text-text mb-4">BMW 5 Series</h3>
+            <div class="flex flex-col gap-2 text-[17px] mb-6">
+              <p class="flex justify-between"><span class="text-text-secondary">Кузов:</span> <span class="text-text-secondary font-semibold">Седан</span></p>
+              <p class="flex justify-between"><span class="text-text-secondary">Двигатель:</span> <span class="text-text-secondary font-semibold">2.0L Turbo</span></p>
+              <p class="flex justify-between"><span class="text-text-secondary">Год выпуска:</span> <span class="text-text-secondary font-semibold">2020</span></p>
+            </div>
+            <p class="text-[22px] font-bold text-text mb-6">от 2 850 000 ₽</p>
+            <a href="#" class="btn btn-primary w-full text-[15px]">Подробнее</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <script src="./src/main.js"></script>
 </body>
 </html>
