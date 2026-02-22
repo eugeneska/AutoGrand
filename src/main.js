@@ -30,6 +30,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const lotsSlider = document.querySelector('.lots-slider');
+  const lotsPrev = document.getElementById('lots-prev');
+  const lotsNext = document.getElementById('lots-next');
+
+  if (lotsSlider && lotsPrev && lotsNext) {
+    const getScrollAmount = () => {
+      const card = lotsSlider.querySelector(':scope > div');
+      if (!card) return 300;
+      return card.offsetWidth + 24;
+    };
+
+    lotsNext.addEventListener('click', () => {
+      lotsSlider.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+    });
+
+    lotsPrev.addEventListener('click', () => {
+      lotsSlider.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+    });
+  }
+
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
       const targetId = anchor.getAttribute('href');
