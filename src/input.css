@@ -41,6 +41,23 @@
     letter-spacing: -0.02em;
   }
 
+  @media (max-width: 767px) {
+    .btn {
+      padding: 0.75rem 1.5rem;
+      font-size: 13px;
+    }
+
+    .btn-outline-white {
+      font-size: 14px;
+      padding: 0.75rem 1.5rem;
+    }
+
+    .stat-card {
+      padding: 20px;
+      border-radius: 16px;
+    }
+  }
+
   .h2 {
     font-size: var(--text-h2);
     font-weight: 700;

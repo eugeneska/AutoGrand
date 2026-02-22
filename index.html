@@ -14,12 +14,12 @@
 <body class="font-sans bg-bg text-text antialiased">
 
   <!-- ════════════════════ HEADER ════════════════════ -->
-  <header class="fixed top-0 left-0 w-full z-50 pt-4 px-4">
-    <div class="max-w-[1350px] mx-auto bg-bg rounded-full shadow-[0_4px_24px_rgba(0,0,0,0.08)] px-12 py-5 flex items-center justify-between">
+  <header class="fixed top-0 left-0 w-full z-50 pt-4 px-3 md:px-4">
+    <div class="max-w-[1350px] mx-auto bg-bg rounded-full shadow-[0_4px_24px_rgba(0,0,0,0.08)] px-5 md:px-12 py-3 md:py-5 flex items-center justify-between">
 
       <!-- Logo -->
       <a href="#" class="shrink-0">
-        <img src="./logo.png" alt="AutoGrand" class="h-14">
+        <img src="./logo.png" alt="AutoGrand" class="h-8 md:h-14">
       </a>
 
       <!-- Nav (desktop) -->
@@ -89,26 +89,26 @@
   </header>
 
   <!-- ════════════════════ HERO ════════════════════ -->
-  <section class="relative min-h-screen overflow-visible">
+  <section class="relative lg:min-h-screen overflow-visible">
 
     <!-- Blue block — starts under header, shifted right, narrower -->
     <div class="hidden lg:block absolute top-[100px] right-[8%] bottom-[100px] w-[31%] bg-primary" style="border-radius: 0 0 40px 40px;"></div>
 
     <!-- Hero content -->
-    <div class="max-w-[1400px] mx-auto px-8 relative z-10">
-      <div class="pt-80 pb-52">
+    <div class="max-w-[1400px] mx-auto px-5 md:px-8 relative z-10">
+      <div class="pt-28 md:pt-80 pb-28 md:pb-52">
         <div class="max-w-[600px]">
-          <h1 class="h1 mb-2">Пригон авто</h1>
-          <h1 class="h1 text-primary mb-10">из США</h1>
-          <p class="text-body text-text-secondary mb-12 whitespace-nowrap">
+          <h1 class="h1 mb-2 text-[36px] md:text-[72px]">Пригон авто</h1>
+          <h1 class="h1 text-primary mb-6 md:mb-10 text-[36px] md:text-[72px]">из США</h1>
+          <p class="text-body text-text-secondary mb-8 md:mb-12 text-[15px] md:text-[18px]">
             С выгодой до 50% относительно российского рынка
           </p>
-          <div class="flex gap-4 whitespace-nowrap">
-            <a href="#contact" class="btn btn-primary">
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#contact" class="btn btn-primary text-[13px] md:text-[16px] px-5 md:px-10">
               Подобрать со скидкой
-              <svg class="w-8 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 32 20"><path d="M0 10h28m0 0l-6-6m6 6l-6 6"/></svg>
+              <svg class="w-6 md:w-8 h-4 md:h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 32 20"><path d="M0 10h28m0 0l-6-6m6 6l-6 6"/></svg>
             </a>
-            <a href="#contact" class="btn btn-outline">Подобрать под бюджет</a>
+            <a href="#contact" class="btn btn-outline text-[13px] md:text-[16px] px-5 md:px-10">Подобрать под бюджет</a>
           </div>
         </div>
       </div>
@@ -124,8 +124,8 @@
   </section>
 
   <!-- ════════════════════ STAT CARDS ════════════════════ -->
-  <section class="relative z-30 -mt-16 pb-24">
-    <div class="max-w-[1400px] mx-auto px-8">
+  <section class="relative z-30 -mt-16 pb-12 md:pb-24">
+    <div class="max-w-[1400px] mx-auto px-5 md:px-8">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
         <div class="stat-card text-center">
@@ -153,19 +153,19 @@
   </section>
 
   <!-- ════════════════════ FIX PRICE ════════════════════ -->
-  <section class="py-24" style="background: linear-gradient(135deg, #116DFF 0%, #0A3D8F 100%);">
-    <div class="max-w-[1400px] mx-auto px-8">
-      <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-12">
+  <section class="py-14 md:py-24" style="background: linear-gradient(135deg, #116DFF 0%, #0A3D8F 100%);">
+    <div class="max-w-[1400px] mx-auto px-5 md:px-8">
+      <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 md:gap-12">
 
         <!-- Left: heading -->
-        <h2 class="text-white text-[48px] font-extrabold uppercase leading-[1.1] shrink-0">
+        <h2 class="text-white text-[28px] md:text-[48px] font-extrabold uppercase leading-[1.1] shrink-0">
           Фиксируем<br>стоимость услуг до<br>роста курса
         </h2>
 
         <!-- Right: text + button -->
         <div class="max-w-[520px]">
-          <p class="text-white/90 text-[22px] leading-relaxed mb-8">
-            Мы фиксируем нашу комиссию и условия в<br>договоре — вы защищены от<br>неожиданного удорожания услуг
+          <p class="text-white/90 text-[16px] md:text-[22px] leading-relaxed mb-6 md:mb-8">
+            Мы фиксируем нашу комиссию и условия в договоре — вы защищены от неожиданного удорожания услуг
           </p>
           <a href="#contact" class="btn btn-outline-white">
             Зафиксировать цену
@@ -178,12 +178,12 @@
   </section>
 
   <!-- ════════════════════ АКТУАЛЬНЫЕ ЛОТЫ ════════════════════ -->
-  <section id="lots" class="py-24">
-    <div class="max-w-[1400px] mx-auto px-8">
+  <section id="lots" class="py-14 md:py-24">
+    <div class="max-w-[1400px] mx-auto px-5 md:px-8">
 
       <!-- Header: title + arrows -->
-      <div class="flex items-center justify-between mb-12">
-        <h2 class="text-[40px] font-extrabold uppercase text-text">Актуальные лоты</h2>
+      <div class="flex items-center justify-between mb-8 md:mb-12">
+        <h2 class="text-[24px] md:text-[40px] font-extrabold uppercase text-text">Актуальные лоты</h2>
         <div class="flex items-center gap-3">
           <button id="lots-prev" class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:bg-primary-hover transition-colors cursor-pointer">
             <svg class="w-6 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 20"><path d="M24 10H4m0 0l6-6M4 10l6 6"/></svg>
@@ -253,59 +253,59 @@
   </section>
 
   <!-- ════════════════════ ПОЧЕМУ ВЫБИРАЮТ ════════════════════ -->
-  <section id="about" class="py-24 bg-bg-section">
-    <div class="max-w-[1400px] mx-auto px-8">
+  <section id="about" class="py-14 md:py-24 bg-bg-section">
+    <div class="max-w-[1400px] mx-auto px-5 md:px-8">
 
       <!-- Title -->
-      <div class="text-center mb-16">
-        <h2 class="text-[40px] font-extrabold uppercase text-text mb-4">Почему выбирают AutoGrand</h2>
-        <p class="text-[20px] text-text-secondary mx-auto whitespace-nowrap">Делаем покупку автомобиля из США максимально простой, безопасной и выгодной.</p>
+      <div class="text-center mb-10 md:mb-16">
+        <h2 class="text-[24px] md:text-[40px] font-extrabold uppercase text-text mb-4">Почему выбирают AutoGrand</h2>
+        <p class="text-[15px] md:text-[20px] text-text-secondary mx-auto">Делаем покупку автомобиля из США максимально простой, безопасной и выгодной.</p>
       </div>
 
       <!-- Cards grid: 2x2 left + 1 tall right -->
-      <div class="grid lg:grid-cols-[1fr_1fr_1fr] gap-6">
+      <div class="grid lg:grid-cols-[1fr_1fr_1fr] gap-4 md:gap-6">
 
         <!-- Left 4 cards in 2x2 -->
-        <div class="lg:col-span-2 grid sm:grid-cols-2 gap-6">
+        <div class="lg:col-span-2 grid grid-cols-2 gap-4 md:gap-6">
 
           <!-- Card 1: Прозрачный договор -->
-          <div class="border border-text/15 rounded-[24px] bg-white p-10">
-            <img src="./doc.svg" alt="Договор" class="w-14 h-14 mb-6">
-            <h3 class="text-[22px] font-bold text-text mb-3">Прозрачный договор</h3>
-            <p class="text-[17px] text-text-secondary leading-relaxed">Фиксируем стоимость услуг и этапы<br>в договоре. Без «всплывающих»<br>комиссий.</p>
+          <div class="border border-text/15 rounded-[16px] md:rounded-[24px] bg-white p-5 md:p-10">
+            <img src="./doc.svg" alt="Договор" class="w-10 h-10 md:w-14 md:h-14 mb-4 md:mb-6">
+            <h3 class="text-[15px] md:text-[22px] font-bold text-text mb-2 md:mb-3">Прозрачный договор</h3>
+            <p class="text-[13px] md:text-[17px] text-text-secondary leading-relaxed">Фиксируем стоимость услуг и этапы в договоре. Без «всплывающих» комиссий.</p>
           </div>
 
           <!-- Card 2: Проверка авто -->
-          <div class="border border-text/15 rounded-[24px] bg-white p-10">
-            <svg class="w-14 h-14 text-primary mb-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-            <h3 class="text-[22px] font-bold text-text mb-3">Проверка авто перед покупкой</h3>
-            <p class="text-[17px] text-text-secondary leading-relaxed">Проверяем историю, повреждения,<br>юридическую чистоту и реальный<br>пробег.</p>
+          <div class="border border-text/15 rounded-[16px] md:rounded-[24px] bg-white p-5 md:p-10">
+            <svg class="w-10 h-10 md:w-14 md:h-14 text-primary mb-4 md:mb-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            <h3 class="text-[15px] md:text-[22px] font-bold text-text mb-2 md:mb-3">Проверка авто перед покупкой</h3>
+            <p class="text-[13px] md:text-[17px] text-text-secondary leading-relaxed">Проверяем историю, повреждения, юридическую чистоту и реальный пробег.</p>
           </div>
 
           <!-- Card 3: Полный цикл -->
-          <div class="border border-text/15 rounded-[24px] bg-white p-10">
-            <img src="./key.svg" alt="Ключ" class="w-14 h-14 mb-6">
-            <h3 class="text-[22px] font-bold text-text mb-3">Полный цикл под ключ</h3>
-            <p class="text-[17px] text-text-secondary leading-relaxed">Подбор → Выкуп → Доставка → Растаможка → Постановка на учёт.</p>
+          <div class="border border-text/15 rounded-[16px] md:rounded-[24px] bg-white p-5 md:p-10">
+            <img src="./key.svg" alt="Ключ" class="w-10 h-10 md:w-14 md:h-14 mb-4 md:mb-6">
+            <h3 class="text-[15px] md:text-[22px] font-bold text-text mb-2 md:mb-3">Полный цикл под ключ</h3>
+            <p class="text-[13px] md:text-[17px] text-text-secondary leading-relaxed">Подбор → Выкуп → Доставка → Растаможка → Постановка на учёт.</p>
           </div>
 
           <!-- Card 4: По всей России -->
-          <div class="border border-text/15 rounded-[24px] bg-white p-10">
-            <svg class="w-14 h-14 text-primary mb-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/></svg>
-            <h3 class="text-[22px] font-bold text-text mb-3">Работаем по всей России</h3>
-            <p class="text-[17px] text-text-secondary leading-relaxed">Организуем доставку в любой<br>регион.</p>
+          <div class="border border-text/15 rounded-[16px] md:rounded-[24px] bg-white p-5 md:p-10">
+            <svg class="w-10 h-10 md:w-14 md:h-14 text-primary mb-4 md:mb-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/></svg>
+            <h3 class="text-[15px] md:text-[22px] font-bold text-text mb-2 md:mb-3">Работаем по всей России</h3>
+            <p class="text-[13px] md:text-[17px] text-text-secondary leading-relaxed">Организуем доставку в любой регион.</p>
           </div>
 
         </div>
 
         <!-- Card 5: Безопасная оплата (tall, gradient) -->
-        <div class="rounded-[24px] p-8 flex flex-col justify-between text-white" style="background: linear-gradient(180deg, #116DFF 0%, #0A3D8F 100%);">
+        <div class="rounded-[16px] md:rounded-[24px] p-6 md:p-8 flex flex-col justify-between text-white" style="background: linear-gradient(180deg, #116DFF 0%, #0A3D8F 100%);">
           <div>
-            <svg class="w-14 h-14 mb-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <h3 class="text-[22px] font-bold mb-3">Безопасная оплата</h3>
-            <p class="text-[17px] text-white/85 leading-relaxed">Готовим нужные документы и выставляем официальный счёт для оплаты авто и его доставки.</p>
+            <svg class="w-10 h-10 md:w-14 md:h-14 mb-4 md:mb-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <h3 class="text-[18px] md:text-[22px] font-bold mb-2 md:mb-3">Безопасная оплата</h3>
+            <p class="text-[14px] md:text-[17px] text-white/85 leading-relaxed">Готовим нужные документы и выставляем официальный счёт для оплаты авто и его доставки.</p>
           </div>
-          <a href="#contact" class="btn btn-outline-white mt-8">
+          <a href="#contact" class="btn btn-outline-white mt-6 md:mt-8">
             Подробнее
             <svg class="w-8 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 32 20"><path d="M0 10h28m0 0l-6-6m6 6l-6 6"/></svg>
           </a>
@@ -316,24 +316,24 @@
   </section>
 
   <!-- ════════════════════ КАК МЫ РАБОТАЕМ ════════════════════ -->
-  <section id="how" class="py-24">
-    <div class="max-w-[1400px] mx-auto px-8">
+  <section id="how" class="py-14 md:py-24">
+    <div class="max-w-[1400px] mx-auto px-5 md:px-8">
 
-      <div class="flex flex-col lg:flex-row gap-16">
+      <div class="flex flex-col lg:flex-row gap-10 md:gap-16">
 
         <!-- LEFT: title + photo grid -->
         <div class="lg:w-[48%] shrink-0">
-          <h2 class="text-[40px] font-extrabold uppercase text-text mb-10">Как мы работаем</h2>
+          <h2 class="text-[24px] md:text-[40px] font-extrabold uppercase text-text mb-8 md:mb-10">Как мы работаем</h2>
 
-          <div class="grid grid-cols-2 gap-4">
-            <img src="./2photo.png" alt="" class="w-full aspect-square object-cover rounded-tl-[40px]">
-            <img src="./3photo.png" alt="" class="w-full aspect-square object-cover rounded-tr-[40px]">
-            <img src="./1photo.png" alt="" class="w-full aspect-square object-cover rounded-bl-[40px]">
-            <div class="w-full aspect-square rounded-br-[40px] flex flex-col justify-between text-white p-8" style="background: linear-gradient(135deg, #116DFF 0%, #0A3D8F 100%);">
-              <p class="text-[26px] font-extrabold uppercase leading-tight">Бесплатная<br>консультация</p>
-              <a href="#contact" class="btn btn-outline-white self-start text-[14px]">
+          <div class="grid grid-cols-2 gap-3 md:gap-4">
+            <img src="./2photo.png" alt="" class="w-full aspect-square object-cover rounded-tl-[20px] md:rounded-tl-[40px]">
+            <img src="./3photo.png" alt="" class="w-full aspect-square object-cover rounded-tr-[20px] md:rounded-tr-[40px]">
+            <img src="./1photo.png" alt="" class="w-full aspect-square object-cover rounded-bl-[20px] md:rounded-bl-[40px]">
+            <div class="w-full aspect-square rounded-br-[20px] md:rounded-br-[40px] flex flex-col justify-between text-white p-4 md:p-8" style="background: linear-gradient(135deg, #116DFF 0%, #0A3D8F 100%);">
+              <p class="text-[14px] md:text-[26px] font-extrabold uppercase leading-tight">Бесплатная<br>консультация</p>
+              <a href="#contact" class="btn btn-outline-white self-start text-[10px] md:text-[14px] px-3 md:px-6 py-2 md:py-4">
                 ЗАКАЗАТЬ
-                <svg class="w-7 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 32 20"><path d="M0 10h28m0 0l-6-6m6 6l-6 6"/></svg>
+                <svg class="w-4 md:w-7 h-3 md:h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 32 20"><path d="M0 10h28m0 0l-6-6m6 6l-6 6"/></svg>
               </a>
             </div>
           </div>
@@ -345,59 +345,59 @@
           <!-- Step 1 -->
           <div class="flex gap-6">
             <div class="flex flex-col items-center">
-              <div class="w-16 h-16 rounded-full border-2 border-primary bg-primary-soft flex items-center justify-center text-[20px] font-bold text-primary shrink-0">1</div>
+              <div class="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-primary bg-primary-soft flex items-center justify-center text-[16px] md:text-[20px] font-bold text-primary shrink-0">1</div>
               <svg class="w-5 h-14 text-primary shrink-0 mt-8 mb-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 20 56"><path d="M10 0v52m0 0l-6-6m6 6l6-6"/></svg>
             </div>
             <div class="pb-10 pt-2">
-              <h4 class="text-[24px] font-bold text-text mb-2">Поиск автомобиля</h4>
-              <p class="text-[18px] text-text-secondary leading-relaxed">Подборку желаемых вариантов мы направим вам<br>удобным способом или представим при личной<br>встрече в нашем офисе</p>
+              <h4 class="text-[18px] md:text-[24px] font-bold text-text mb-2">Поиск автомобиля</h4>
+              <p class="text-[15px] md:text-[18px] text-text-secondary leading-relaxed">Подборку желаемых вариантов мы направим вам удобным способом или представим при личной встрече в нашем офисе</p>
             </div>
           </div>
 
           <!-- Step 2 -->
           <div class="flex gap-6">
             <div class="flex flex-col items-center">
-              <div class="w-16 h-16 rounded-full border-2 border-primary bg-primary-soft flex items-center justify-center text-[20px] font-bold text-primary shrink-0">2</div>
+              <div class="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-primary bg-primary-soft flex items-center justify-center text-[16px] md:text-[20px] font-bold text-primary shrink-0">2</div>
               <svg class="w-5 h-14 text-primary shrink-0 mt-8 mb-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 20 56"><path d="M10 0v52m0 0l-6-6m6 6l6-6"/></svg>
             </div>
             <div class="pb-10 pt-2">
-              <h4 class="text-[24px] font-bold text-text mb-2">Заключение договора</h4>
-              <p class="text-[18px] text-text-secondary leading-relaxed">Проводим подписание договора и финализируем<br>техническое задание: утверждаем модель, ценовой<br>диапазон и необходимые опции</p>
+              <h4 class="text-[18px] md:text-[24px] font-bold text-text mb-2">Заключение договора</h4>
+              <p class="text-[15px] md:text-[18px] text-text-secondary leading-relaxed">Проводим подписание договора и финализируем техническое задание: утверждаем модель, ценовой диапазон и необходимые опции</p>
             </div>
           </div>
 
           <!-- Step 3 -->
           <div class="flex gap-6">
             <div class="flex flex-col items-center">
-              <div class="w-16 h-16 rounded-full border-2 border-primary bg-primary-soft flex items-center justify-center text-[20px] font-bold text-primary shrink-0">3</div>
+              <div class="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-primary bg-primary-soft flex items-center justify-center text-[16px] md:text-[20px] font-bold text-primary shrink-0">3</div>
               <svg class="w-5 h-14 text-primary shrink-0 mt-8 mb-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 20 56"><path d="M10 0v52m0 0l-6-6m6 6l6-6"/></svg>
             </div>
             <div class="pb-10 pt-2">
-              <h4 class="text-[24px] font-bold text-text mb-2">Организация участия в аукционе</h4>
-              <p class="text-[18px] text-text-secondary leading-relaxed">Устанавливаем предельную ставку и производим<br>расчёт окончательной стоимости. Гарантируем<br>возможность участия в неограниченном количестве<br>аукционов</p>
+              <h4 class="text-[18px] md:text-[24px] font-bold text-text mb-2">Организация участия в аукционе</h4>
+              <p class="text-[15px] md:text-[18px] text-text-secondary leading-relaxed">Устанавливаем предельную ставку и производим расчёт окончательной стоимости. Гарантируем возможность участия в неограниченном количестве аукционов</p>
             </div>
           </div>
 
           <!-- Step 4 -->
           <div class="flex gap-6">
             <div class="flex flex-col items-center">
-              <div class="w-16 h-16 rounded-full border-2 border-primary bg-primary-soft flex items-center justify-center text-[20px] font-bold text-primary shrink-0">4</div>
+              <div class="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-primary bg-primary-soft flex items-center justify-center text-[16px] md:text-[20px] font-bold text-primary shrink-0">4</div>
               <svg class="w-5 h-14 text-primary shrink-0 mt-8 mb-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 20 56"><path d="M10 0v52m0 0l-6-6m6 6l6-6"/></svg>
             </div>
             <div class="pb-10 pt-2">
-              <h4 class="text-[24px] font-bold text-text mb-2">Покупка</h4>
-              <p class="text-[18px] text-text-secondary leading-relaxed">Формируем полный пакет необходимой документации<br>и выставляем официальный счёт, включающий<br>стоимость автомобиля и его доставку</p>
+              <h4 class="text-[18px] md:text-[24px] font-bold text-text mb-2">Покупка</h4>
+              <p class="text-[15px] md:text-[18px] text-text-secondary leading-relaxed">Формируем полный пакет необходимой документации и выставляем официальный счёт, включающий стоимость автомобиля и его доставку</p>
             </div>
           </div>
 
           <!-- Step 5 -->
           <div class="flex gap-6">
             <div class="flex flex-col items-center">
-              <div class="w-16 h-16 rounded-full border-2 border-primary bg-primary-soft flex items-center justify-center text-[20px] font-bold text-primary shrink-0">5</div>
+              <div class="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-primary bg-primary-soft flex items-center justify-center text-[16px] md:text-[20px] font-bold text-primary shrink-0">5</div>
             </div>
             <div class="pt-2">
-              <h4 class="text-[24px] font-bold text-text mb-2">Доставка и оформление документов</h4>
-              <p class="text-[18px] text-text-secondary leading-relaxed">Мы обеспечиваем полное оформление всей<br>необходимой документации и предоставляем трек-<br>номер для отслеживания транспортировки<br>автомобиля. Для вашего удобства организована<br>круглосуточная консультационная поддержка</p>
+              <h4 class="text-[18px] md:text-[24px] font-bold text-text mb-2">Доставка и оформление документов</h4>
+              <p class="text-[15px] md:text-[18px] text-text-secondary leading-relaxed">Мы обеспечиваем полное оформление всей необходимой документации и предоставляем трек-номер для отслеживания транспортировки автомобиля. Для вашего удобства организована круглосуточная консультационная поддержка</p>
             </div>
           </div>
 
@@ -408,12 +408,12 @@
   </section>
 
   <!-- ════════════════════ ОТЗЫВЫ ════════════════════ -->
-  <section id="reviews" class="py-24 bg-bg-section">
-    <div class="max-w-[1400px] mx-auto px-8">
+  <section id="reviews" class="py-14 md:py-24 bg-bg-section">
+    <div class="max-w-[1400px] mx-auto px-5 md:px-8">
 
       <!-- Header: title + arrows -->
-      <div class="flex items-center justify-between mb-12">
-        <h2 class="text-[40px] font-extrabold uppercase text-text">Что говорят наши клиенты</h2>
+      <div class="flex items-center justify-between mb-8 md:mb-12">
+        <h2 class="text-[22px] md:text-[40px] font-extrabold uppercase text-text">Что говорят наши клиенты</h2>
         <div class="flex items-center gap-3">
           <button class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:bg-primary-hover transition-colors cursor-pointer">
             <svg class="w-6 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 20"><path d="M24 10H4m0 0l6-6M4 10l6 6"/></svg>
@@ -486,22 +486,22 @@
   </section>
 
   <!-- ════════════════════ FAQ ════════════════════ -->
-  <section id="faq" class="py-24">
-    <div class="max-w-[900px] mx-auto px-8">
+  <section id="faq" class="py-14 md:py-24">
+    <div class="max-w-[900px] mx-auto px-5 md:px-8">
 
-      <h2 class="text-[40px] font-extrabold uppercase text-text mb-12 text-center">Часто задаваемые вопросы</h2>
+      <h2 class="text-[24px] md:text-[40px] font-extrabold uppercase text-text mb-8 md:mb-12 text-center">Часто задаваемые вопросы</h2>
 
       <div class="flex flex-col gap-5">
 
         <!-- Q1 -->
         <div class="faq-card border border-text/15 rounded-[20px] bg-transparent overflow-hidden">
-          <button class="faq-toggle w-full flex items-center justify-between px-8 py-6 cursor-pointer" onclick="this.parentElement.classList.toggle('open')">
-            <span class="text-[24px] font-semibold text-text text-left">Сколько длится доставка?</span>
+          <button class="faq-toggle w-full flex items-center justify-between px-5 md:px-8 py-4 md:py-6 cursor-pointer" onclick="this.parentElement.classList.toggle('open')">
+            <span class="text-[16px] md:text-[24px] font-semibold text-text text-left">Сколько длится доставка?</span>
             <span class="w-11 h-11 rounded-full bg-primary flex items-center justify-center shrink-0 ml-4 faq-arrow transition-transform duration-300">
               <svg class="w-6 h-4" fill="none" stroke="white" stroke-width="1.5" viewBox="0 0 24 16"><path d="M0 8h20m0 0l-5-5m5 5l-5 5"/></svg>
             </span>
           </button>
-          <div class="faq-answer px-8">
+          <div class="faq-answer px-5 md:px-8">
             <div>
               <p class="text-[17px] text-text-secondary leading-relaxed pb-6">Средний срок доставки автомобиля из США составляет 2–3 месяца. Сроки зависят от местоположения авто на территории Штатов, логистического маршрута и скорости таможенного оформления. На каждом этапе мы информируем вас о статусе и предоставляем трек-номер для отслеживания.</p>
             </div>
@@ -510,13 +510,13 @@
 
         <!-- Q2 -->
         <div class="faq-card border border-text/15 rounded-[20px] bg-transparent overflow-hidden">
-          <button class="faq-toggle w-full flex items-center justify-between px-8 py-6 cursor-pointer" onclick="this.parentElement.classList.toggle('open')">
-            <span class="text-[24px] font-semibold text-text text-left">Есть ли скрытые платежи?</span>
+          <button class="faq-toggle w-full flex items-center justify-between px-5 md:px-8 py-4 md:py-6 cursor-pointer" onclick="this.parentElement.classList.toggle('open')">
+            <span class="text-[16px] md:text-[24px] font-semibold text-text text-left">Есть ли скрытые платежи?</span>
             <span class="w-11 h-11 rounded-full bg-primary flex items-center justify-center shrink-0 ml-4 faq-arrow transition-transform duration-300">
               <svg class="w-6 h-4" fill="none" stroke="white" stroke-width="1.5" viewBox="0 0 24 16"><path d="M0 8h20m0 0l-5-5m5 5l-5 5"/></svg>
             </span>
           </button>
-          <div class="faq-answer px-8">
+          <div class="faq-answer px-5 md:px-8">
             <div>
               <p class="text-[17px] text-text-secondary leading-relaxed pb-6">Нет. Мы фиксируем полную стоимость в договоре ещё до начала работы. В неё входят: стоимость авто, доставка, таможенные пошлины, оформление документов и наша комиссия. Никаких дополнительных сборов или «всплывающих» платежей не будет.</p>
             </div>
@@ -525,13 +525,13 @@
 
         <!-- Q3 -->
         <div class="faq-card border border-text/15 rounded-[20px] bg-transparent overflow-hidden">
-          <button class="faq-toggle w-full flex items-center justify-between px-8 py-6 cursor-pointer" onclick="this.parentElement.classList.toggle('open')">
-            <span class="text-[24px] font-semibold text-text text-left">Можно ли купить авто без повреждений?</span>
+          <button class="faq-toggle w-full flex items-center justify-between px-5 md:px-8 py-4 md:py-6 cursor-pointer" onclick="this.parentElement.classList.toggle('open')">
+            <span class="text-[16px] md:text-[24px] font-semibold text-text text-left">Можно ли купить авто без повреждений?</span>
             <span class="w-11 h-11 rounded-full bg-primary flex items-center justify-center shrink-0 ml-4 faq-arrow transition-transform duration-300">
               <svg class="w-6 h-4" fill="none" stroke="white" stroke-width="1.5" viewBox="0 0 24 16"><path d="M0 8h20m0 0l-5-5m5 5l-5 5"/></svg>
             </span>
           </button>
-          <div class="faq-answer px-8">
+          <div class="faq-answer px-5 md:px-8">
             <div>
               <p class="text-[17px] text-text-secondary leading-relaxed pb-6">Да, мы подбираем автомобили как с аукционов (в том числе с минимальными повреждениями), так и от дилеров в идеальном состоянии. Перед покупкой мы предоставляем полный отчёт с фотографиями, историей и описанием состояния, чтобы вы принимали решение осознанно.</p>
             </div>
@@ -540,13 +540,13 @@
 
         <!-- Q4 -->
         <div class="faq-card border border-text/15 rounded-[20px] bg-transparent overflow-hidden">
-          <button class="faq-toggle w-full flex items-center justify-between px-8 py-6 cursor-pointer" onclick="this.parentElement.classList.toggle('open')">
-            <span class="text-[24px] font-semibold text-text text-left">Что если авто окажется хуже ожиданий?</span>
+          <button class="faq-toggle w-full flex items-center justify-between px-5 md:px-8 py-4 md:py-6 cursor-pointer" onclick="this.parentElement.classList.toggle('open')">
+            <span class="text-[16px] md:text-[24px] font-semibold text-text text-left">Что если авто окажется хуже ожиданий?</span>
             <span class="w-11 h-11 rounded-full bg-primary flex items-center justify-center shrink-0 ml-4 faq-arrow transition-transform duration-300">
               <svg class="w-6 h-4" fill="none" stroke="white" stroke-width="1.5" viewBox="0 0 24 16"><path d="M0 8h20m0 0l-5-5m5 5l-5 5"/></svg>
             </span>
           </button>
-          <div class="faq-answer px-8">
+          <div class="faq-answer px-5 md:px-8">
             <div>
               <p class="text-[17px] text-text-secondary leading-relaxed pb-6">Мы тщательно проверяем каждый автомобиль до покупки: анализируем историю через Carfax/AutoCheck, оцениваем реальные повреждения и сверяем пробег. Если состояние не соответствует описанию аукциона, мы не рекомендуем покупку. Все риски обсуждаются заранее и прописываются в договоре.</p>
             </div>
@@ -555,13 +555,13 @@
 
         <!-- Q5 -->
         <div class="faq-card border border-text/15 rounded-[20px] bg-transparent overflow-hidden">
-          <button class="faq-toggle w-full flex items-center justify-between px-8 py-6 cursor-pointer" onclick="this.parentElement.classList.toggle('open')">
-            <span class="text-[24px] font-semibold text-text text-left">Какие гарантии предоставляете?</span>
+          <button class="faq-toggle w-full flex items-center justify-between px-5 md:px-8 py-4 md:py-6 cursor-pointer" onclick="this.parentElement.classList.toggle('open')">
+            <span class="text-[16px] md:text-[24px] font-semibold text-text text-left">Какие гарантии предоставляете?</span>
             <span class="w-11 h-11 rounded-full bg-primary flex items-center justify-center shrink-0 ml-4 faq-arrow transition-transform duration-300">
               <svg class="w-6 h-4" fill="none" stroke="white" stroke-width="1.5" viewBox="0 0 24 16"><path d="M0 8h20m0 0l-5-5m5 5l-5 5"/></svg>
             </span>
           </button>
-          <div class="faq-answer px-8">
+          <div class="faq-answer px-5 md:px-8">
             <div>
               <p class="text-[17px] text-text-secondary leading-relaxed pb-6">Мы работаем по официальному договору, в котором фиксируются все условия, сроки и стоимость. Оплата проходит через безопасные каналы с выставлением счёта. Вы получаете полный комплект документов, а наша команда остаётся на связи 24/7 до момента постановки авто на учёт.</p>
             </div>
@@ -570,13 +570,13 @@
 
         <!-- Q6 -->
         <div class="faq-card border border-text/15 rounded-[20px] bg-transparent overflow-hidden">
-          <button class="faq-toggle w-full flex items-center justify-between px-8 py-6 cursor-pointer" onclick="this.parentElement.classList.toggle('open')">
-            <span class="text-[24px] font-semibold text-text text-left">Можно ли оформить кредит на покупку?</span>
+          <button class="faq-toggle w-full flex items-center justify-between px-5 md:px-8 py-4 md:py-6 cursor-pointer" onclick="this.parentElement.classList.toggle('open')">
+            <span class="text-[16px] md:text-[24px] font-semibold text-text text-left">Можно ли оформить кредит на покупку?</span>
             <span class="w-11 h-11 rounded-full bg-primary flex items-center justify-center shrink-0 ml-4 faq-arrow transition-transform duration-300">
               <svg class="w-6 h-4" fill="none" stroke="white" stroke-width="1.5" viewBox="0 0 24 16"><path d="M0 8h20m0 0l-5-5m5 5l-5 5"/></svg>
             </span>
           </button>
-          <div class="faq-answer px-8">
+          <div class="faq-answer px-5 md:px-8">
             <div>
               <p class="text-[17px] text-text-secondary leading-relaxed pb-6">Да, мы сотрудничаем с банками-партнёрами и поможем оформить автокредит на выгодных условиях. Вы можете рассчитать предварительную сумму ежемесячного платежа ещё до выбора автомобиля. Наш менеджер подберёт оптимальную программу под ваш бюджет.</p>
             </div>
@@ -588,30 +588,30 @@
   </section>
 
   <!-- ════════════════════ ПЕРСОНАЛЬНЫЙ РАСЧЁТ ════════════════════ -->
-  <section id="contact" class="py-24" style="background: linear-gradient(135deg, #052555 0%, #116DFF 100%);">
-    <div class="max-w-[1400px] mx-auto px-8">
+  <section id="contact" class="py-14 md:py-24 overflow-hidden" style="background: linear-gradient(135deg, #052555 0%, #116DFF 100%);">
+    <div class="max-w-[1400px] mx-auto px-5 md:px-8">
 
-      <h2 class="text-[44px] font-extrabold uppercase text-white text-center leading-tight mb-4">Получите персональный расчёт<br>стоимости</h2>
-      <p class="text-[18px] text-white/80 text-center mb-14">Ответим в течение 15 минут с детальным расчётом и подборкой подходящих автомобилей</p>
+      <h2 class="text-[26px] md:text-[44px] font-extrabold uppercase text-white text-center leading-tight mb-3 md:mb-4">Получите персональный расчёт<br>стоимости</h2>
+      <p class="text-[14px] md:text-[18px] text-white/80 text-center mb-8 md:mb-14">Ответим в течение 15 минут с детальным расчётом и подборкой подходящих автомобилей</p>
 
-      <div class="relative flex items-center justify-end">
+      <div class="relative flex items-center justify-center lg:justify-end">
 
-        <div class="absolute left-[-230px] top-[62%] -translate-y-1/2 w-[72%] pointer-events-none">
+        <div class="hidden lg:block absolute left-[-230px] top-[62%] -translate-y-1/2 w-[72%] pointer-events-none">
           <img src="./porshe.png" alt="Porsche" class="w-full" style="transform: scaleX(-1);">
         </div>
 
-        <div class="w-1/2 relative z-10">
-          <form class="bg-white rounded-[24px] p-8 flex flex-col gap-5">
-            <div class="grid grid-cols-2 gap-5">
+        <div class="w-full lg:w-1/2 relative z-10">
+          <form class="bg-white rounded-[24px] p-6 md:p-8 flex flex-col gap-4 md:gap-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
               <input type="text" placeholder="Имя" class="border border-border rounded-[12px] px-5 py-4 text-[16px] text-text outline-none focus:border-primary transition-colors">
               <input type="tel" placeholder="Телефон" class="border border-border rounded-[12px] px-5 py-4 text-[16px] text-text outline-none focus:border-primary transition-colors">
             </div>
-            <div class="grid grid-cols-2 gap-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
               <input type="text" placeholder="Бюджет" class="border border-border rounded-[12px] px-5 py-4 text-[16px] text-text outline-none focus:border-primary transition-colors">
               <input type="text" placeholder="Желаемый авто" class="border border-border rounded-[12px] px-5 py-4 text-[16px] text-text outline-none focus:border-primary transition-colors">
             </div>
             <textarea placeholder="Комментарий" rows="4" class="border border-border rounded-[12px] px-5 py-4 text-[16px] text-text outline-none focus:border-primary transition-colors resize-none"></textarea>
-            <button type="submit" class="w-full py-4 rounded-[12px] text-white font-bold text-[18px] uppercase tracking-wider cursor-pointer transition-opacity hover:opacity-90" style="background: linear-gradient(135deg, #052555 0%, #116DFF 100%);">Отправить</button>
+            <button type="submit" class="w-full py-4 rounded-[12px] text-white font-bold text-[16px] md:text-[18px] uppercase tracking-wider cursor-pointer transition-opacity hover:opacity-90" style="background: linear-gradient(135deg, #052555 0%, #116DFF 100%);">Отправить</button>
           </form>
         </div>
 
@@ -620,10 +620,10 @@
   </section>
 
   <!-- ════════════════════ FOOTER ════════════════════ -->
-  <footer class="bg-[#111111] pt-16 pb-8">
-    <div class="max-w-[1400px] mx-auto px-8">
+  <footer class="bg-[#111111] pt-12 md:pt-16 pb-8">
+    <div class="max-w-[1400px] mx-auto px-5 md:px-8">
 
-      <div class="grid grid-cols-3 gap-12 pb-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 pb-10 md:pb-12">
 
         <!-- Left -->
         <div>
