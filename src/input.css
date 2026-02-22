@@ -143,4 +143,27 @@
     box-shadow: 0 12px 40px rgba(17, 109, 255, 0.08);
     transform: translateY(-4px);
   }
+
+  .faq-card .faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows 0.35s ease;
+  }
+
+  .faq-card .faq-answer > div {
+    overflow: hidden;
+  }
+
+  .faq-card.open .faq-answer {
+    grid-template-rows: 1fr;
+  }
+
+  .faq-card .faq-arrow {
+    transform: rotate(90deg);
+  }
+
+  .faq-card.open .faq-arrow {
+    transform: rotate(-90deg);
+  }
 }
