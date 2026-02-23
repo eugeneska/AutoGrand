@@ -11,7 +11,7 @@
 
   <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body class="font-sans bg-bg text-text antialiased">
+<body class="font-sans bg-bg text-text antialiased overflow-x-hidden">
 
   <!-- ════════════════════ HEADER ════════════════════ -->
   <header class="fixed top-0 left-0 w-full z-50 pt-4 px-3 md:px-4">
@@ -19,7 +19,7 @@
 
       <!-- Logo -->
       <a href="#" class="shrink-0">
-        <img src="./logo.png" alt="AutoGrand" class="h-8 md:h-14">
+        <img src="./logonew.jpg" alt="AutoGrand" class="h-11 md:h-20">
       </a>
 
       <!-- Nav (desktop) -->
@@ -110,11 +110,14 @@
             </a>
             <a href="#contact" class="btn btn-outline text-[13px] md:text-[16px] px-5 md:px-10">Подобрать под бюджет</a>
           </div>
+
+          <!-- BMW mobile -->
+          <img src="./bmw.png" alt="BMW" class="lg:hidden w-full mt-8 pointer-events-none" style="filter: drop-shadow(0 15px 30px rgba(0,0,0,0.25));">
         </div>
       </div>
     </div>
 
-    <!-- BMW — large, raised, shifted right -->
+    <!-- BMW — large, raised, shifted right (desktop) -->
     <img
       src="./bmw.png"
       alt="BMW"
@@ -194,60 +197,9 @@
         </div>
       </div>
 
-      <!-- Cards: slider on mobile, grid on desktop -->
-      <div class="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-0 md:gap-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory scroll-smooth pb-4 md:pb-0 lots-slider">
-
-        <!-- Card 1: Toyota Camry -->
-        <div class="border border-text/15 rounded-[28px] overflow-hidden transition hover:shadow-lg min-w-full md:min-w-0 snap-start shrink-0 md:shrink px-2 md:px-0">
-          <div class="p-5">
-            <img src="./camry.jpg" alt="Toyota Camry" class="w-full h-[200px] md:h-[240px] object-cover rounded-xl">
-          </div>
-          <div class="px-5 md:px-6 pb-6 md:pb-7">
-            <h3 class="text-[18px] md:text-[22px] font-bold text-text mb-3 md:mb-4">Toyota Camry</h3>
-            <div class="flex flex-col gap-2 text-[15px] md:text-[17px] mb-4 md:mb-6">
-              <p class="flex justify-between"><span class="text-text-secondary">Кузов:</span> <span class="text-text-secondary font-semibold">Седан</span></p>
-              <p class="flex justify-between"><span class="text-text-secondary">Двигатель:</span> <span class="text-text-secondary font-semibold">3.0L</span></p>
-              <p class="flex justify-between"><span class="text-text-secondary">Год выпуска:</span> <span class="text-text-secondary font-semibold">2021</span></p>
-            </div>
-            <p class="text-[18px] md:text-[22px] font-bold text-text mb-4 md:mb-6">от 2 100 000 ₽</p>
-            <a href="#" class="btn btn-primary w-full text-[14px] md:text-[15px]">Подробнее</a>
-          </div>
-        </div>
-
-        <!-- Card 2: Nissan Leaf -->
-        <div class="border border-text/15 rounded-[28px] overflow-hidden transition hover:shadow-lg min-w-full md:min-w-0 snap-start shrink-0 md:shrink px-2 md:px-0">
-          <div class="p-5">
-            <img src="./nissan.jpg" alt="Nissan Leaf" class="w-full h-[200px] md:h-[240px] object-cover rounded-xl">
-          </div>
-          <div class="px-5 md:px-6 pb-6 md:pb-7">
-            <h3 class="text-[18px] md:text-[22px] font-bold text-text mb-3 md:mb-4">Nissan Leaf</h3>
-            <div class="flex flex-col gap-2 text-[15px] md:text-[17px] mb-4 md:mb-6">
-              <p class="flex justify-between"><span class="text-text-secondary">Кузов:</span> <span class="text-text-secondary font-semibold">Хэтчбек</span></p>
-              <p class="flex justify-between"><span class="text-text-secondary">Двигатель:</span> <span class="text-text-secondary font-semibold">Электро</span></p>
-              <p class="flex justify-between"><span class="text-text-secondary">Год выпуска:</span> <span class="text-text-secondary font-semibold">2022</span></p>
-            </div>
-            <p class="text-[18px] md:text-[22px] font-bold text-text mb-4 md:mb-6">от 1 750 000 ₽</p>
-            <a href="#" class="btn btn-primary w-full text-[14px] md:text-[15px]">Подробнее</a>
-          </div>
-        </div>
-
-        <!-- Card 3: BMW 5 Series -->
-        <div class="border border-text/15 rounded-[28px] overflow-hidden transition hover:shadow-lg min-w-full md:min-w-0 snap-start shrink-0 md:shrink px-2 md:px-0">
-          <div class="p-5">
-            <img src="./bmw.png" alt="BMW 5 Series" class="w-full h-[200px] md:h-[240px] object-cover rounded-xl">
-          </div>
-          <div class="px-5 md:px-6 pb-6 md:pb-7">
-            <h3 class="text-[18px] md:text-[22px] font-bold text-text mb-3 md:mb-4">BMW 5 Series</h3>
-            <div class="flex flex-col gap-2 text-[15px] md:text-[17px] mb-4 md:mb-6">
-              <p class="flex justify-between"><span class="text-text-secondary">Кузов:</span> <span class="text-text-secondary font-semibold">Седан</span></p>
-              <p class="flex justify-between"><span class="text-text-secondary">Двигатель:</span> <span class="text-text-secondary font-semibold">2.0L Turbo</span></p>
-              <p class="flex justify-between"><span class="text-text-secondary">Год выпуска:</span> <span class="text-text-secondary font-semibold">2020</span></p>
-            </div>
-            <p class="text-[18px] md:text-[22px] font-bold text-text mb-4 md:mb-6">от 2 850 000 ₽</p>
-            <a href="#" class="btn btn-primary w-full text-[14px] md:text-[15px]">Подробнее</a>
-          </div>
-        </div>
-
+      <!-- Cards: slider on mobile, grid on desktop — loaded dynamically -->
+      <div id="lots-container" class="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-0 md:gap-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory scroll-smooth pb-4 md:pb-0 lots-slider">
+        <p class="text-text-secondary text-center py-12 w-full">Загрузка лотов...</p>
       </div>
     </div>
   </section>
@@ -593,6 +545,11 @@
 
       <h2 class="text-[26px] md:text-[44px] font-extrabold uppercase text-white text-center leading-tight mb-3 md:mb-4">Получите персональный расчёт<br>стоимости</h2>
       <p class="text-[14px] md:text-[18px] text-white/80 text-center mb-8 md:mb-14">Ответим в течение 15 минут с детальным расчётом и подборкой подходящих автомобилей</p>
+
+      <!-- Porsche mobile -->
+      <div class="lg:hidden flex justify-center mb-6">
+        <img src="./porshe.png" alt="Porsche" class="w-[85%] pointer-events-none" style="transform: scaleX(-1); filter: drop-shadow(0 10px 30px rgba(0,0,0,0.3));">
+      </div>
 
       <div class="relative flex items-center justify-center lg:justify-end">
 

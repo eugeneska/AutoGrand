@@ -1,2 +1,7 @@
 node_modules/
 dist/
+db/
+uploads/*.jpg
+uploads/*.jpeg
+uploads/*.png
+uploads/*.webp
