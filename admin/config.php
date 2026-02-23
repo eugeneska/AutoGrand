@@ -2,7 +2,7 @@
 session_start();
 
 define('ADMIN_LOGIN', 'admin');
-define('ADMIN_PASSWORD', '$2y$10$YourHashHere');
+define('ADMIN_PASSWORD', '$2y$12$p2dOvqZNOQAOjHjrjyhKH.H0vfkKLY3zka67q5LoGZigrOYVAOUn6');
 
 $dbPath = __DIR__ . '/../db/autogrand.db';
 $dbDir = dirname($dbPath);
@@ -33,10 +33,14 @@ $db->exec("CREATE TABLE IF NOT EXISTS users (
 )");
 
 $existing = $db->querySingle("SELECT id FROM users WHERE login = 'admin'");
+$hash = password_hash('Ag#9xVm!2kLp@Qr4', PASSWORD_DEFAULT);
 if (!$existing) {
-    $hash = password_hash('admin123', PASSWORD_DEFAULT);
     $stmt = $db->prepare("INSERT INTO users (login, password) VALUES (:login, :password)");
     $stmt->bindValue(':login', 'admin', SQLITE3_TEXT);
+    $stmt->bindValue(':password', $hash, SQLITE3_TEXT);
+    $stmt->execute();
+} else {
+    $stmt = $db->prepare("UPDATE users SET password = :password WHERE login = 'admin'");
     $stmt->bindValue(':password', $hash, SQLITE3_TEXT);
     $stmt->execute();
 }
