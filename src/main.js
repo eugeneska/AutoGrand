@@ -68,6 +68,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const lotsContainer = document.getElementById('lots-container');
   const lotsPrev = document.getElementById('lots-prev');
   const lotsNext = document.getElementById('lots-next');
+  const reviewsContainer = document.getElementById('reviews-container');
+  const reviewsPrev = document.getElementById('reviews-prev');
+  const reviewsNext = document.getElementById('reviews-next');
 
   const fallbackLots = [
     { title: 'Nissan Leaf', body_type: 'Седан', engine: '3.0L', year: 2021, price: 'от 2 100 000 ₽', image_url: './assets/images/camry.jpg' },
@@ -189,6 +192,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     lotsPrev.addEventListener('click', () => {
       lotsContainer.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+    });
+  }
+
+  if (reviewsContainer && reviewsPrev && reviewsNext) {
+    const getReviewsScrollAmount = () => {
+      const card = reviewsContainer.querySelector(':scope > div');
+      if (!card) return 320;
+      const styles = window.getComputedStyle(reviewsContainer);
+      const gap = parseFloat(styles.columnGap || styles.gap || '16') || 16;
+      return card.offsetWidth + gap;
+    };
+
+    reviewsNext.addEventListener('click', () => {
+      reviewsContainer.scrollBy({ left: getReviewsScrollAmount(), behavior: 'smooth' });
+    });
+
+    reviewsPrev.addEventListener('click', () => {
+      reviewsContainer.scrollBy({ left: -getReviewsScrollAmount(), behavior: 'smooth' });
     });
   }
 
