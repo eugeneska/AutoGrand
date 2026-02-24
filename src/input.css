@@ -161,6 +161,16 @@
     transform: translateY(-4px);
   }
 
+  .why-card {
+    box-shadow: 0 14px 36px rgba(17, 109, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .why-card:hover {
+    box-shadow: 0 20px 46px rgba(17, 109, 255, 0.16);
+    transform: translateY(-4px);
+  }
+
   .lots-slider {
     scrollbar-width: none;
     -ms-overflow-style: none;
