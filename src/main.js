@@ -73,8 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const reviewsNext = document.getElementById('reviews-next');
 
   const fallbackLots = [
-    { title: 'Nissan Leaf', body_type: 'Седан', engine: '3.0L', year: 2021, price: 'от 2 100 000 ₽', image_url: './assets/images/camry.jpg' },
-    { title: 'Nissan Leaf', body_type: 'Хэтчбек', engine: 'Электро', year: 2022, price: 'от 1 750 000 ₽', image_url: './assets/images/nissan.jpg' },
+    { title: 'Toyota Camry', body_type: 'Седан', engine: '3.0L', year: 2021, price: 'от 2 100 000 ₽', image_url: './assets/images/camry.png' },
+    { title: 'Nissan Leaf', body_type: 'Хэтчбек', engine: 'Электро', year: 2022, price: 'от 1 750 000 ₽', image_url: './assets/images/nissan.png' },
     { title: 'BMW 5 Series', body_type: 'Седан', engine: '2.0L Turbo', year: 2020, price: 'от 2 850 000 ₽', image_url: './assets/images/bmw.png' }
   ];
   let currentLots = [...fallbackLots];
