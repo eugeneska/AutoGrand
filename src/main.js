@@ -1,4 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealObserver = prefersReducedMotion
+    ? null
+    : new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.18, rootMargin: '0px 0px -8% 0px' });
+
+  const attachRevealAnimation = (elements, baseIndex = 0) => {
+    if (!elements || elements.length === 0) return;
+    elements.forEach((el, index) => {
+      if (!(el instanceof HTMLElement)) return;
+      if (prefersReducedMotion) {
+        el.classList.add('is-visible');
+        return;
+      }
+      if (!el.classList.contains('animate-fade-up')) {
+        el.classList.add('animate-fade-up');
+      }
+      const delay = ((baseIndex + index) % 6) * 70;
+      el.style.setProperty('--reveal-delay', `${delay}ms`);
+      revealObserver.observe(el);
+    });
+  };
+
+  const initPageAnimations = () => {
+    const staticTargets = document.querySelectorAll(
+      'section h2, .stat-card, .faq-card, #about .border, #reviews .flex.flex-col, #how .flex.gap-6, #contact form'
+    );
+    attachRevealAnimation(Array.from(staticTargets));
+
+    if (!prefersReducedMotion) {
+      const heroDesktopImage = document.querySelector('section img[alt="BMW"].hidden');
+      if (heroDesktopImage) heroDesktopImage.classList.add('animate-float');
+    }
+  };
+
   const burger = document.getElementById('burger');
   const mobileMenu = document.getElementById('mobile-menu');
 
@@ -43,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderLots(lots) {
     if (!lotsContainer) return;
     lotsContainer.innerHTML = lots.map(lot => `
-      <div class="border border-text/15 rounded-[28px] overflow-hidden transition hover:shadow-lg min-w-full md:min-w-0 snap-start shrink-0 md:shrink px-2 md:px-0">
+      <div class="border border-text/15 rounded-[28px] overflow-hidden transition hover:shadow-lg min-w-full md:min-w-0 snap-start shrink-0 md:shrink px-2 md:px-0 lot-card-animate">
         <div class="p-5">
           <img src="${lot.image_url}" alt="${lot.title}" class="w-full h-[200px] md:h-[240px] object-cover rounded-xl">
         </div>
@@ -59,6 +99,9 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
     `).join('');
+
+    const lotCards = lotsContainer.querySelectorAll(':scope > div');
+    attachRevealAnimation(Array.from(lotCards), 2);
   }
 
   fetch('./api/lots.php')
@@ -97,4 +140,6 @@ document.addEventListener('DOMContentLoaded', () => {
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
+
+  initPageAnimations();
 });

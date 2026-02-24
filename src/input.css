@@ -192,4 +192,52 @@
   .faq-card.open .faq-arrow {
     transform: rotate(-90deg);
   }
+
+  .animate-float {
+    animation: floatY 6s ease-in-out infinite;
+  }
+
+  .animate-fade-up {
+    opacity: 0;
+    transform: translateY(26px) scale(0.985);
+    filter: blur(2px);
+    transition:
+      opacity 0.7s ease,
+      transform 0.7s ease,
+      filter 0.7s ease;
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform, filter;
+  }
+
+  .animate-fade-up.is-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+
+  .lot-card-animate {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .lot-card-animate:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(17, 109, 255, 0.12);
+  }
+}
+
+@keyframes floatY {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
