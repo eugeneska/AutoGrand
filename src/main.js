@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!lotsContainer) return;
     currentLots = Array.isArray(lots) ? lots : [];
     lotsContainer.innerHTML = currentLots.map((lot, index) => `
-      <div class="border border-text/15 rounded-[28px] overflow-hidden transition hover:shadow-lg min-w-full md:min-w-0 snap-start shrink-0 md:shrink px-2 md:px-0 lot-card-animate">
+      <div class="border border-black rounded-[28px] overflow-hidden transition hover:shadow-lg min-w-full md:min-w-0 snap-start shrink-0 md:shrink px-2 md:px-0 lot-card-animate">
         <div class="p-5">
           <img src="${lot.image_url}" alt="${lot.title}" class="w-full h-[200px] md:h-[240px] object-cover rounded-xl">
         </div>
